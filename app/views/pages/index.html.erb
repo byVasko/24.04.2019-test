@@ -1,0 +1,25 @@
+<% if user_signed_in? %>
+  <% if current_user.userparam.nil? %>
+     <%= link_to "Profile", new_userparam_path %>
+  <% else %>
+   <%= link_to "Profile", userparam_path(current_user.id) %>
+  <% end %>
+
+  <%= link_to "Logout",  destroy_user_session_path, method: :delete %>
+<% else %>
+   <%= link_to "Login", new_user_session_path %>
+<% end %>
+<hr>
+<%= link_to "Create new post",  new_post_path %>
+
+<% if @posts == [] %>
+    <p>Create new post</p>
+<% else %>
+    <% @posts.each do |post| %>
+       <p>User <b><%= post.user.email %></b> write: <br />
+       <b><%= post.title %></b><br />
+       <%= post.body %></p>
+       <p><%= link_to "Read More", post_path(post.id) %></p>
+       <hr>
+    <% end %>
+<% end %>
