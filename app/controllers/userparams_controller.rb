@@ -17,12 +17,15 @@ before_action :authenticate_user!
   end
   
   def edit
+    @userparam = current_user.userparam
   end
   
   def update
-  end
-  
-  def destroy
+    @userparam = Userparam.find_by(user_id: current_user.id)
+    if @userparam.update(profile_params)
+       redirect_to userparam_path(@userparam.id)
+    end
+    
   end
   
 private

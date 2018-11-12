@@ -1,2 +1,5 @@
-<h1>Userparams#show</h1>
-<p>Find me in app/views/userparams/show.html.erb</p>
+Firstname: <%= current_user.userparam.firstname %><br />
+Lastname: <%= current_user.userparam.lastname %><br />
+Age: <%= current_user.userparam.age %><br />
+<%= link_to "edit", edit_userparam_path(current_user.id) %><br />
+
