@@ -31,7 +31,7 @@ before_action :authenticate_user!
 private
 
   def profile_params
-    params.require(:userparam).permit(:user_id, :firstname, :lastname, :age)
+    params.require(:userparam).permit(:user_id, :firstname, :lastname, :age, :avatar)
   end
   
 end

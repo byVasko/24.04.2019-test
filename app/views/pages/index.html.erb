@@ -5,7 +5,9 @@
     <p>Create new post</p>
 <% else %>
     <% @posts.each do |post| %>
-       <p>User <b><%= post.user.email %></b> write: <br />
+       <p>User 
+       	<%= image_tag post.user.userparam.avatar.url(:small) %>
+       	<b><%= post.user.email %></b> write: <br />
        <b><%= post.title %></b><br />
        <%= post.body %></p>
        <p><%= link_to "Read More", post_path(post.id) %></p>
