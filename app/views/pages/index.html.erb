@@ -6,8 +6,10 @@
     <p>Create new post</p>
 <% else %>
     <% @posts.each do |post| %>
-       <p>User 
+       <p>User
+	    <% if !post.user.userparam.nil? %>
        	<%= image_tag post.user.userparam.avatar.url(:small) %>
+	<% end %>
        	<b><%= post.user.email %></b> write: <br />
        <b><%= post.title %></b><br />
        <%= post.body %></p>

@@ -22,6 +22,7 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
   end
   
   def show
+    @comments = @post.post_comments
   end
   
   def edit

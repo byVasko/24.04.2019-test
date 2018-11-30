@@ -6,5 +6,6 @@ class User < ApplicationRecord
    
   has_one :userparam      
   has_many :posts
+  has_many :post_comments
   has_many :photos
 end

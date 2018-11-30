@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'postcomments/show'
+
   get 'photos/show'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -7,7 +9,10 @@ Rails.application.routes.draw do
   
   devise_for :users
   
-  resources :posts
+  resources :posts do
+    resources :postcomments
+  end
+
   resources :userparams
   resources :photos
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

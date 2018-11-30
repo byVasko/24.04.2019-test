@@ -1,11 +1,11 @@
 <%= form_for @userparam, url: userparams_path do |f| %>
 
-<% if @userparam,.errors.any? %>
+<% if @userparam.errors.any? %>
   <div id="error_explanation">
-    <h2><%= pluralize(@userparam,.errors.count, "error") %> prohibited this post from being saved:</h2>
+    <h2><%= pluralize(@userparam.errors.count, "error") %> prohibited this post from being saved:</h2>
  
     <ul>
-    <% @userparam,.errors.full_messages.each do |msg| %>
+    <% @userparam.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
     </ul>
