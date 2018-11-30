@@ -13,8 +13,10 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
   def create
     @post = current_user.posts.build(post_params)
     if @post.save
+      flash[:notice] = "Post successfully created"
       redirect_to root_path
     else
+      flash[:error] = "Post has error"
       render 'new'
     end  
   end
@@ -27,7 +29,11 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
   
   def update
     if @post.update(post_params)
+      flash[:notice] = "Post successfully updated"
       redirect_to post_path(@post.id)
+    else
+      flash[:error] = "Post has error"
+      render 'edit'
     end
     
   end
