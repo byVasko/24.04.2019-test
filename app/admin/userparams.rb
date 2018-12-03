@@ -5,10 +5,7 @@ ActiveAdmin.register Userparam do
 
 form do |f|
   f.actions
-	f.inputs 'Profile' do
-
-	
-	    
+	f.inputs 'Profile' do	    
 	    f.input :user_id, :as => :select, :collection => User.all.map{|u| ["#{u.email}", u.id]}
 	    f.input :firstname
 	    f.input :lastname

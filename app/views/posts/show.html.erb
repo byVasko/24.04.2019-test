@@ -10,6 +10,11 @@ Body: <%= @post.body %><br />
     <%= comment.body %><br />
    </p>
 <% end %>
+<h2>Write comment here </h2>
+<%= form_for :post_comment, url: post_postcomments_path(@post.id) do |f| %>
+  Comment: <%= f.text_area :body, size: "60x5" %><br />
+  <%= f.submit "Create" %>
+<% end %>
 
 <% if @post.user_id == current_user.id %>
 <p><%= link_to "edit", edit_post_path(@post.id) %> |
