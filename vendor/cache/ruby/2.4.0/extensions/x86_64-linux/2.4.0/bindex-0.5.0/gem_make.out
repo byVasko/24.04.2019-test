@@ -1,0 +1,15 @@
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+/home/by_vasko/.rvm/rubies/ruby-2.4.0/bin/ruby -r ./siteconf20190424-14005-1cn85w.rb extconf.rb
+creating Makefile
+
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20190424-14005-gy5uj9/bindex

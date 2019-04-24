@@ -1,0 +1,5 @@
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/childprocess-1.0.1/ext
+/home/by_vasko/.rvm/rubies/ruby-2.4.0/bin/ruby mkrf_conf.rb
+
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/childprocess-1.0.1/ext
+/home/by_vasko/.rvm/rubies/ruby-2.4.0/bin/ruby -rubygems /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/rake-12.3.2/exe/rake RUBYARCHDIR=/home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/extensions/x86_64-linux/2.4.0/childprocess-1.0.1 RUBYLIBDIR=/home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/extensions/x86_64-linux/2.4.0/childprocess-1.0.1

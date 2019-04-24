@@ -1,0 +1,19 @@
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+/home/by_vasko/.rvm/rubies/ruby-2.4.0/bin/ruby -r ./siteconf20190424-18539-1eppgu5.rb extconf.rb
+creating Makefile
+
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/by_vasko/projects/lection-12-11-2018/vendor/cache/ruby/2.4.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20190424-18539-bcotr9/byebug
